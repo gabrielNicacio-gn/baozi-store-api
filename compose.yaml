@@ -1,0 +1,8 @@
+network:
+  baozi_net:
+   drive:bride
+
+service:
+  db:
+    image:
+    environment:
