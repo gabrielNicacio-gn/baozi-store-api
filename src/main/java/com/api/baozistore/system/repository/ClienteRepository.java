@@ -1,12 +1,11 @@
 package com.api.baozistore.system.repository;
 
 import com.api.baozistore.system.model.Cliente;
-import com.api.baozistore.system.model.Produto;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 import java.util.UUID;
 
-public interface ProdutoRepository extends JpaRepository<Produto, UUID> {
-    List<Produto> findAllByEmEstoqueTrue();
+public interface ClienteRepository extends JpaRepository<Cliente, UUID> {
+    List<Cliente> findAllByOrderByClienteDesdeAsc();
 }
